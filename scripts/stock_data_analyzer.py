@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import logging
 from statsmodels.tsa.seasonal import seasonal_decompose
+from IPython.display import display
 
 # Configure logging
 logging.basicConfig(
@@ -82,12 +83,12 @@ class StockDataAnalyzer:
                     'props': [('font-size', '12px'), ('text-align', 'left')]
                 }]).bar(subset=['Missing Percentage'], color='#FF6347'))
 
-    def detect_and_remove_outliers(self):
+    def detect_outliers(self):
         """Detect and remove outliers in daily returns using the IQR method."""
         logger.info("Detecting and removing outliers in daily returns.")
         for ticker, df in self.data.items():
             if "Daily_Return" not in df.columns:
-                logger.warning(f"Skipping {ticker}: 'Daily_Return' not found.")
+                logger.warning(f"Skipping {ticker}: 'Daily_Return' column not found.")
                 continue
 
             q1 = df["Daily_Return"].quantile(0.25)
@@ -97,48 +98,32 @@ class StockDataAnalyzer:
             upper_bound = q3 + 1.5 * iqr
 
             outliers = df[(df["Daily_Return"] < lower_bound) | (df["Daily_Return"] > upper_bound)]
-            num_outliers = len(outliers)
+            logger.info(f"Outliers detected for {ticker}: {len(outliers)} events.")
 
+            # Print the number of rows before and after removal
+            print(f"{ticker}: Before Outlier Removal: {len(df)} rows")
+            
             # Remove outliers
-            df_cleaned = df[(df["Daily_Return"] >= lower_bound) & (df["Daily_Return"] <= upper_bound)]
+            df = df[(df["Daily_Return"] >= lower_bound) & (df["Daily_Return"] <= upper_bound)]
+            self.data[ticker] = df  # Update with cleaned data
+            
+            print(f"{ticker}: After Outlier Removal: {len(df)} rows")
 
-            # Log the changes
-            logger.info(f"Removed {num_outliers} outliers from {ticker}. New shape: {df_cleaned.shape}")
 
-            # Replace the original DataFrame with the cleaned version
-            self.data[ticker] = df_cleaned
-
-    def detect_outliers(self):
-        """Detect outliers in daily returns using the IQR method."""
-        logger.info("Detecting outliers in daily returns.")
-        outliers_summary = []
-
+    def calculate_daily_returns(self):
+        """Calculate daily percentage change for volatility analysis."""
+        logger.info("Calculating daily percentage returns.")
         for ticker, df in self.data.items():
+            if "Close" not in df.columns:
+                logger.warning(f"Skipping {ticker}: 'Close' column not found.")
+                continue
+
             df["Daily_Return"] = df["Close"].pct_change()
-            q1 = df["Daily_Return"].quantile(0.25)
-            q3 = df["Daily_Return"].quantile(0.75)
-            iqr = q3 - q1
-            lower_bound = q1 - 1.5 * iqr
-            upper_bound = q3 + 1.5 * iqr
 
-            outliers = df[(df["Daily_Return"] < lower_bound) | (df["Daily_Return"] > upper_bound)]
-            outliers_summary.append({
-                "Ticker": ticker,
-                "Outlier Count": len(outliers),
-                "Q1": q1,
-                "Q3": q3,
-                "IQR": iqr,
-                "Lower Bound": lower_bound,
-                "Upper Bound": upper_bound
-            })
+            # Ensure there are no NaNs (first row will be NaN)
+            df["Daily_Return"].fillna(0, inplace=True)
 
-        outliers_df = pd.DataFrame(outliers_summary)
-        print("\nOutliers Summary:\n")
-        display(outliers_df.style.set_properties(**{'text-align': 'left'})
-                .set_table_styles([{
-                    'selector': 'th',
-                    'props': [('font-size', '12px'), ('text-align', 'left')]
-                }]).bar(subset=['Outlier Count'], color='#4682B4'))
+            logger.info(f"Daily returns statistics for {ticker}:\n{df['Daily_Return'].describe()}")
 
     def analyze_volatility(self, window=30):
         """Analyze rolling means and standard deviations for volatility."""
@@ -178,13 +163,75 @@ class StockDataAnalyzer:
         """Plot daily percentage change to observe volatility."""
         logger.info("Plotting daily returns.")
         plt.figure(figsize=(12, 6))
+
         for ticker, df in self.data.items():
+            if "Daily_Return" not in df.columns:
+                logger.warning(f"Skipping {ticker}: 'Daily_Return' column not found.")
+                continue
+
             plt.plot(df.index, df["Daily_Return"], label=ticker)
+
         plt.xlabel("Date")
         plt.ylabel("Daily Return")
         plt.title("Daily Returns Over Time")
         plt.legend()
         plt.show()
+
+    def decompose_seasonality(self, period=252):
+        """Decompose the time series into trend, seasonality, and residuals."""
+        logger.info("Performing seasonal decomposition for each stock.")
+        for ticker, df in self.data.items():
+            if "Close" not in df.columns:
+                logger.warning(f"Skipping {ticker}: 'Close' column not found.")
+                continue
+
+            try:
+                result = seasonal_decompose(df["Close"], model="additive", period=period)  # ~1 year of trading days
+                fig, axes = plt.subplots(4, 1, figsize=(12, 8), sharex=True)
+
+                result.observed.plot(ax=axes[0], title=f"{ticker} - Observed (Original Data)")
+                result.trend.plot(ax=axes[1], title="Trend")
+                result.seasonal.plot(ax=axes[2], title="Seasonality")
+                result.resid.plot(ax=axes[3], title="Residuals")
+
+                plt.suptitle(f"Seasonal Decomposition of {ticker}")
+                plt.tight_layout()
+                plt.show()
+
+            except Exception as e:
+                logger.error(f"Error decomposing {ticker}: {e}")
+
+    def calculate_var_sharpe_ratio(self, risk_free_rate=0.02):
+        """Calculate Value at Risk (VaR) and Sharpe Ratio."""
+        logger.info("Calculating VaR and Sharpe Ratio.")
+        for ticker, df in self.data.items():
+            if "Daily_Return" not in df.columns:
+                logger.warning(f"Skipping {ticker}: 'Daily_Return' column not found.")
+                continue
+
+            daily_returns = df["Daily_Return"].dropna()
+            
+            if len(daily_returns) < 2:
+                logger.warning(f"Not enough data for {ticker} to calculate VaR and Sharpe Ratio.")
+                continue
+
+            # Value at Risk (VaR) at 95% confidence
+            var_95 = np.percentile(daily_returns, 5)  # 5th percentile
+            logger.info(f"VaR (95%) for {ticker}: {var_95:.5f}")
+
+            # Sharpe Ratio calculation
+            excess_return = daily_returns.mean() - risk_free_rate / 252
+            sharpe_ratio = excess_return / daily_returns.std()
+            logger.info(f"Sharpe Ratio for {ticker}: {sharpe_ratio:.5f}")
+
+            # Display the results in a DataFrame
+            risk_metrics = pd.DataFrame({
+                "Metric": ["VaR (95%)", "Sharpe Ratio"],
+                "Value": [var_95, sharpe_ratio]
+            })
+
+            print(f"\nRisk Metrics for {ticker}:\n", risk_metrics.to_string(index=False))
+
 
 ''' 
 # Usage Example
@@ -200,8 +247,12 @@ if __name__ == "__main__":
     analyzer.display_basic_statistics()  # Step 2: Display Basic Statistics
     analyzer.check_missing_values()   # Step 3: Check Missing Values
     analyzer.clean_data()             # Step 4: Clean Data
-    analyzer.detect_and_remove_outliers()        # Step 5: Detect Outliers
+    analyzer.calculate_daily_returns()   # Step 2.2: Compute Daily Returns
+    analyzer.detect_outliers()           # Step 2.4: Outlier Detection
     analyzer.analyze_volatility()     # Step 6: Volatility Analysis
     analyzer.plot_closing_price()     # Step 7: Plot Closing Prices
     analyzer.plot_daily_returns()     # Step 8: Plot Daily Returns
+    analyzer.decompose_seasonality()      # Step 3: Decomposing Trends & Seasonality
+    analyzer.calculate_var_sharpe_ratio() # Step 5: Risk Assessment (VaR & Sharpe Ratio)
+
 '''
