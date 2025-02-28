@@ -1,9 +1,131 @@
-2025-02-26 21:00:30,269 - INFO - Fetching data for TSLA from 2015-01-01 to 2025-01-31...
-2025-02-26 21:00:36,399 - INFO - Fetching data for BND from 2015-01-01 to 2025-01-31...
-2025-02-26 21:00:38,330 - INFO - Fetching data for SPY from 2015-01-01 to 2025-01-31...
-2025-02-26 21:02:15,053 - INFO - Fetching data for TSLA from 2015-01-01 to 2025-01-31...
-2025-02-26 21:02:15,236 - INFO - Fetching data for BND from 2015-01-01 to 2025-01-31...
-2025-02-26 21:02:15,414 - INFO - Fetching data for SPY from 2015-01-01 to 2025-01-31...
-2025-02-26 21:02:15,805 - INFO - Data for TSLA saved to ../week 11 dataTSLA.csv
-2025-02-26 21:02:15,901 - INFO - Data for BND saved to ../week 11 dataBND.csv
-2025-02-26 21:02:16,011 - INFO - Data for SPY saved to ../week 11 dataSPY.csv
+2025-02-28 20:25:45,939 - INFO - Initialized YFinanceDataCollector with tickers: ['TSLA', 'BND', 'SPY'], date range: 2015-01-01 to 2025-01-31
+2025-02-28 20:26:07,278 - INFO - Fetching data for TSLA
+2025-02-28 20:29:07,136 - INFO - Initialized YFinanceDataCollector with tickers: ['TSLA', 'BND', 'SPY'], date range: 2015-01-01 to 2025-01-31
+2025-02-28 20:29:27,891 - INFO - Fetching data for TSLA
+2025-02-28 20:31:06,010 - INFO - Fetching data for TSLA
+2025-02-28 20:32:04,200 - INFO - Initialized YFinanceDataCollector with tickers: ['TSLA', 'BND', 'SPY'], date range: 2015-01-01 to 2025-01-31
+2025-02-28 20:32:10,677 - INFO - Fetching data for TSLA
+2025-02-28 20:32:10,794 - INFO - Fetching data for BND
+2025-02-28 20:32:11,981 - INFO - Fetching data for SPY
+2025-02-28 20:32:12,688 - INFO - Data fetching complete.
+2025-02-28 20:33:36,883 - INFO - Saving data to historical_data.csv
+2025-02-28 20:33:36,883 - INFO - Fetching data for TSLA
+2025-02-28 20:33:36,980 - INFO - Fetching data for BND
+2025-02-28 20:33:37,092 - INFO - Fetching data for SPY
+2025-02-28 20:33:37,213 - INFO - Data fetching complete.
+2025-02-28 20:33:37,370 - INFO - Data successfully saved to historical_data.csv
+2025-02-28 20:37:27,879 - INFO - Initialized YFinanceDataCollector with tickers: ['TSLA', 'BND', 'SPY'], date range: 2015-01-01 to 2025-01-31
+2025-02-28 20:38:47,075 - INFO - Saving data for TSLA to ../week 11 data /Data/TSLA.csv
+2025-02-28 20:38:47,077 - INFO - Fetching data for TSLA
+2025-02-28 20:38:47,173 - INFO - Data fetching complete for TSLA.
+2025-02-28 20:39:18,109 - INFO - Saving data for TSLA to ../week 11 data/Data/TSLA.csv
+2025-02-28 20:39:18,112 - INFO - Fetching data for TSLA
+2025-02-28 20:39:18,251 - INFO - Data fetching complete for TSLA.
+2025-02-28 20:39:18,318 - INFO - Data for TSLA successfully saved to ../week 11 data/Data/TSLA.csv
+2025-02-28 20:39:18,324 - INFO - Saving data for BND to ../week 11 data/Data/BND.csv
+2025-02-28 20:39:18,326 - INFO - Fetching data for BND
+2025-02-28 20:39:18,481 - INFO - Data fetching complete for BND.
+2025-02-28 20:39:18,513 - INFO - Data for BND successfully saved to ../week 11 data/Data/BND.csv
+2025-02-28 20:39:18,520 - INFO - Saving data for SPY to ../week 11 data/Data/SPY.csv
+2025-02-28 20:39:18,520 - INFO - Fetching data for SPY
+2025-02-28 20:39:18,631 - INFO - Data fetching complete for SPY.
+2025-02-28 20:39:18,691 - INFO - Data for SPY successfully saved to ../week 11 data/Data/SPY.csv
+2025-02-28 20:44:04,492 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 20:44:04,699 - INFO - Basic statistics for TSLA:
+              Open         High          Low        Close        Volume
+count  2535.000000  2535.000000  2535.000000  2535.000000  2.535000e+03
+mean    117.877662   120.474827   115.097514   117.848209  1.120308e+08
+std     116.611575   119.236025   113.698930   116.508288  7.387509e+07
+min       9.488000    10.331333     9.403333     9.578000  1.062000e+07
+25%      17.259334    17.527667    16.942000    17.228000  6.680295e+07
+50%      31.299999    32.329334    29.760000    30.298000  9.264180e+07
+75%     222.653336   226.696671   217.061661   221.525002  1.294283e+08
+max     475.899994   488.540009   457.510010   479.859985  9.140820e+08
+2025-02-28 20:44:04,971 - INFO - Checking for missing values in the DataFrame.
+2025-02-28 20:44:04,976 - INFO - Missing values check completed.
+2025-02-28 20:44:05,003 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 20:44:05,188 - INFO - Basic statistics for BND:
+              Open         High          Low        Close        Volume
+count  2535.000000  2535.000000  2535.000000  2535.000000  2.535000e+03
+mean     69.293224    69.391261    69.186012    69.289451  4.233200e+06
+std       4.793199     4.800408     4.782142     4.792145  2.796083e+06
+min      61.891461    61.937373    61.822628    61.860867  0.000000e+00
+25%      65.552721    65.630196    65.475496    65.565258  2.057700e+06
+50%      68.310226    68.457869    68.169740    68.329117  3.805800e+06
+75%      72.845710    72.946418    72.728801    72.879929  5.626700e+06
+max      78.884935    78.920165    78.788028    78.823265  3.193720e+07
+2025-02-28 20:44:05,230 - INFO - Checking for missing values in the DataFrame.
+2025-02-28 20:44:05,234 - INFO - Missing values check completed.
+2025-02-28 20:44:05,256 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 20:44:05,326 - INFO - Basic statistics for SPY:
+              Open         High          Low        Close        Volume
+count  2535.000000  2535.000000  2535.000000  2535.000000  2.535000e+03
+mean    316.021384   317.725660   314.157889   316.067402  8.714655e+07
+std     117.921618   118.486410   117.269902   117.926910  4.487253e+07
+min     156.354943   157.864136   154.676927   156.800842  2.027000e+07
+25%     214.972492   215.702238   214.206885   214.841980  5.862005e+07
+50%     277.230781   277.919580   276.073703   277.117920  7.642870e+07
+75%     406.100271   409.134341   402.830888   405.869186  1.018866e+08
+max     609.809998   610.780029   606.799988   609.750000  5.072443e+08
+2025-02-28 20:44:05,369 - INFO - Checking for missing values in the DataFrame.
+2025-02-28 20:44:05,373 - INFO - Missing values check completed.
+2025-02-28 20:45:46,093 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 20:45:46,135 - INFO - Basic statistics for TSLA:
+              Open         High          Low        Close        Volume
+count  2535.000000  2535.000000  2535.000000  2535.000000  2.535000e+03
+mean    117.877662   120.474827   115.097514   117.848209  1.120308e+08
+std     116.611575   119.236025   113.698930   116.508288  7.387509e+07
+min       9.488000    10.331333     9.403333     9.578000  1.062000e+07
+25%      17.259334    17.527667    16.942000    17.228000  6.680295e+07
+50%      31.299999    32.329334    29.760000    30.298000  9.264180e+07
+75%     222.653336   226.696671   217.061661   221.525002  1.294283e+08
+max     475.899994   488.540009   457.510010   479.859985  9.140820e+08
+2025-02-28 20:45:46,164 - INFO - Checking for missing values in the DataFrame.
+2025-02-28 20:45:46,173 - INFO - Missing values check completed.
+2025-02-28 20:45:46,190 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 20:45:46,231 - INFO - Basic statistics for BND:
+              Open         High          Low        Close        Volume
+count  2535.000000  2535.000000  2535.000000  2535.000000  2.535000e+03
+mean     69.293224    69.391261    69.186012    69.289451  4.233200e+06
+std       4.793199     4.800408     4.782142     4.792145  2.796083e+06
+min      61.891461    61.937373    61.822628    61.860867  0.000000e+00
+25%      65.552721    65.630196    65.475496    65.565258  2.057700e+06
+50%      68.310226    68.457869    68.169740    68.329117  3.805800e+06
+75%      72.845710    72.946418    72.728801    72.879929  5.626700e+06
+max      78.884935    78.920165    78.788028    78.823265  3.193720e+07
+2025-02-28 20:45:46,295 - INFO - Checking for missing values in the DataFrame.
+2025-02-28 20:45:46,297 - INFO - Missing values check completed.
+2025-02-28 20:45:46,327 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 20:45:46,399 - INFO - Basic statistics for SPY:
+              Open         High          Low        Close        Volume
+count  2535.000000  2535.000000  2535.000000  2535.000000  2.535000e+03
+mean    316.021384   317.725660   314.157889   316.067402  8.714655e+07
+std     117.921618   118.486410   117.269902   117.926910  4.487253e+07
+min     156.354943   157.864136   154.676927   156.800842  2.027000e+07
+25%     214.972492   215.702238   214.206885   214.841980  5.862005e+07
+50%     277.230781   277.919580   276.073703   277.117920  7.642870e+07
+75%     406.100271   409.134341   402.830888   405.869186  1.018866e+08
+max     609.809998   610.780029   606.799988   609.750000  5.072443e+08
+2025-02-28 20:45:46,447 - INFO - Checking for missing values in the DataFrame.
+2025-02-28 20:45:46,451 - INFO - Missing values check completed.
+2025-02-28 20:52:16,314 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 20:52:16,343 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 20:52:16,376 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 20:54:57,704 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 20:54:57,729 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 20:54:57,750 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 20:55:02,262 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 20:55:02,293 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 20:55:02,327 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 21:01:11,251 - INFO - Detecting outliers in daily returns.
+2025-02-28 21:13:52,373 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 21:13:52,396 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 21:13:52,413 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 21:14:09,934 - INFO - Detecting outliers in daily returns.
+2025-02-28 21:14:26,971 - INFO - Detecting and removing outliers in daily returns.
+2025-02-28 21:14:26,987 - INFO - Removed 149 outliers from TSLA. New shape: (2385, 6)
+2025-02-28 21:14:26,992 - INFO - Removed 114 outliers from BND. New shape: (2420, 6)
+2025-02-28 21:14:27,011 - INFO - Removed 167 outliers from SPY. New shape: (2367, 6)
+2025-02-28 21:15:21,340 - INFO - Analyzing volatility with a rolling window of 30 days.
+2025-02-28 21:16:14,650 - INFO - Plotting closing prices for all assets.
+2025-02-28 21:16:42,388 - INFO - Plotting daily returns.
