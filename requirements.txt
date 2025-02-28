@@ -1,1 +1,7 @@
-
+ipython
+matplotlib
+numpy
+pandas
+seaborn
+statsmodels
+yfinance
