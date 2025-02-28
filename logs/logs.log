@@ -129,3 +129,41 @@ max     609.809998   610.780029   606.799988   609.750000  5.072443e+08
 2025-02-28 21:15:21,340 - INFO - Analyzing volatility with a rolling window of 30 days.
 2025-02-28 21:16:14,650 - INFO - Plotting closing prices for all assets.
 2025-02-28 21:16:42,388 - INFO - Plotting daily returns.
+2025-02-28 21:25:20,771 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 21:25:20,800 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 21:25:20,823 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 21:25:30,002 - INFO - Detecting and removing outliers in daily returns.
+2025-02-28 21:25:30,004 - WARNING - Skipping TSLA: 'Daily_Return' not found.
+2025-02-28 21:25:30,006 - WARNING - Skipping BND: 'Daily_Return' not found.
+2025-02-28 21:25:30,009 - WARNING - Skipping SPY: 'Daily_Return' not found.
+2025-02-28 21:25:52,426 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 21:25:52,449 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 21:25:52,469 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 21:26:02,355 - INFO - Detecting and removing outliers in daily returns.
+2025-02-28 21:26:02,356 - WARNING - Skipping TSLA: 'Daily_Return' not found.
+2025-02-28 21:26:02,357 - WARNING - Skipping BND: 'Daily_Return' not found.
+2025-02-28 21:26:02,360 - WARNING - Skipping SPY: 'Daily_Return' not found.
+2025-02-28 21:26:15,109 - INFO - Analyzing volatility with a rolling window of 30 days.
+2025-02-28 21:26:18,355 - INFO - Plotting closing prices for all assets.
+2025-02-28 21:26:22,037 - INFO - Plotting daily returns.
+2025-02-28 21:27:13,932 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 21:27:13,965 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 21:27:13,990 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 21:27:25,506 - INFO - Detecting and removing outliers in daily returns.
+2025-02-28 21:27:25,512 - WARNING - Skipping TSLA: 'Daily_Return' not found.
+2025-02-28 21:27:25,515 - WARNING - Skipping BND: 'Daily_Return' not found.
+2025-02-28 21:27:25,518 - WARNING - Skipping SPY: 'Daily_Return' not found.
+2025-02-28 21:27:26,828 - INFO - Detecting and removing outliers in daily returns.
+2025-02-28 21:27:26,830 - WARNING - Skipping TSLA: 'Daily_Return' not found.
+2025-02-28 21:27:26,833 - WARNING - Skipping BND: 'Daily_Return' not found.
+2025-02-28 21:27:26,835 - WARNING - Skipping SPY: 'Daily_Return' not found.
+2025-02-28 21:27:30,414 - INFO - Analyzing volatility with a rolling window of 30 days.
+2025-02-28 21:27:33,862 - INFO - Plotting closing prices for all assets.
+2025-02-28 21:27:37,409 - INFO - Plotting daily returns.
+2025-02-28 21:31:01,732 - INFO - Loading data for TSLA from ../week 11 data/Data/TSLA.csv...
+2025-02-28 21:31:01,757 - INFO - Loading data for BND from ../week 11 data/Data/BND.csv...
+2025-02-28 21:31:01,779 - INFO - Loading data for SPY from ../week 11 data/Data/SPY.csv...
+2025-02-28 21:31:15,281 - INFO - Detecting and removing outliers in daily returns.
+2025-02-28 21:31:15,285 - WARNING - Skipping TSLA: 'Daily_Return' not found.
+2025-02-28 21:31:15,286 - WARNING - Skipping BND: 'Daily_Return' not found.
+2025-02-28 21:31:15,290 - WARNING - Skipping SPY: 'Daily_Return' not found.
