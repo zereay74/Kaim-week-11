@@ -167,3 +167,186 @@ max     609.809998   610.780029   606.799988   609.750000  5.072443e+08
 2025-02-28 21:31:15,285 - WARNING - Skipping TSLA: 'Daily_Return' not found.
 2025-02-28 21:31:15,286 - WARNING - Skipping BND: 'Daily_Return' not found.
 2025-02-28 21:31:15,290 - WARNING - Skipping SPY: 'Daily_Return' not found.
+2025-03-02 20:37:33,163 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 20:37:33,163 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:37:33,190 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 20:37:33,193 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:37:33,198 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 20:37:33,199 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:40:12,434 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 20:40:12,435 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:40:12,442 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 20:40:12,445 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:40:12,451 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 20:40:12,451 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:41:38,804 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 20:41:38,807 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 20:41:38,808 - INFO - Returning DataFrame 'spy'.
+2025-03-02 20:43:39,284 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 20:43:39,284 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:43:39,291 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 20:43:39,298 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:43:39,305 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 20:43:39,320 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:43:39,349 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 20:43:39,351 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:43:39,353 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 20:43:39,358 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:43:39,361 - INFO - Returning DataFrame 'spy'.
+2025-03-02 20:43:39,362 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:44:27,132 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 20:44:27,135 - INFO - Missing values check completed.
+2025-03-02 20:44:27,138 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:44:59,393 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 20:44:59,395 - INFO - Missing values check completed.
+2025-03-02 20:44:59,396 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:45:11,089 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 20:45:11,089 - INFO - Missing values check completed.
+2025-03-02 20:45:11,100 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:57:10,265 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 20:57:10,265 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:57:10,277 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 20:57:10,277 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:57:10,282 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 20:57:10,282 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:57:10,299 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 20:57:10,302 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:57:10,306 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 20:57:10,306 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:57:10,310 - INFO - Returning DataFrame 'spy'.
+2025-03-02 20:57:10,313 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 20:57:10,334 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 20:57:10,336 - INFO - Missing values check completed.
+2025-03-02 20:57:10,338 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 20:57:10,371 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 20:57:10,375 - INFO - Missing values check completed.
+2025-03-02 20:57:10,378 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 20:57:10,412 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 20:57:10,417 - INFO - Missing values check completed.
+2025-03-02 20:57:10,419 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:17:56,186 - INFO - Converted 'Date' column to datetime in DataFrame 'tesla'.
+2025-03-02 21:17:56,188 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 21:17:56,190 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:17:56,197 - INFO - Converted 'Date' column to datetime in DataFrame 'bnd'.
+2025-03-02 21:17:56,197 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 21:17:56,197 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:17:56,206 - INFO - Converted 'Date' column to datetime in DataFrame 'spy'.
+2025-03-02 21:17:56,208 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 21:17:56,210 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:17:56,225 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 21:17:56,230 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 21:17:56,231 - INFO - Returning DataFrame 'spy'.
+2025-03-02 21:17:56,264 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 21:17:56,268 - INFO - Missing values check completed.
+2025-03-02 21:17:56,269 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:17:56,295 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 21:17:56,299 - INFO - Missing values check completed.
+2025-03-02 21:17:56,301 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:17:56,332 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 21:17:56,337 - INFO - Missing values check completed.
+2025-03-02 21:17:56,337 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:25:30,593 - INFO - Converted 'Date' column to datetime in DataFrame 'tesla'.
+2025-03-02 21:25:30,595 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 21:25:30,596 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:25:30,602 - INFO - Converted 'Date' column to datetime in DataFrame 'bnd'.
+2025-03-02 21:25:30,602 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 21:25:30,608 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:25:30,617 - INFO - Converted 'Date' column to datetime in DataFrame 'spy'.
+2025-03-02 21:25:30,618 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 21:25:30,620 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:25:30,636 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 21:25:30,639 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 21:25:30,640 - INFO - Returning DataFrame 'spy'.
+2025-03-02 21:25:30,659 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 21:25:30,662 - INFO - Missing values check completed.
+2025-03-02 21:25:30,665 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:25:30,695 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 21:25:30,698 - INFO - Missing values check completed.
+2025-03-02 21:25:30,702 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:25:30,736 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 21:25:30,739 - INFO - Missing values check completed.
+2025-03-02 21:25:30,740 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:28:13,489 - INFO - Converted 'Date' column to datetime in DataFrame 'tesla'.
+2025-03-02 21:28:13,490 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 21:28:13,492 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:28:13,497 - INFO - Converted 'Date' column to datetime in DataFrame 'bnd'.
+2025-03-02 21:28:13,497 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 21:28:13,503 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:28:13,512 - INFO - Converted 'Date' column to datetime in DataFrame 'spy'.
+2025-03-02 21:28:13,512 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 21:28:13,515 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:28:13,530 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 21:28:13,533 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 21:28:13,533 - INFO - Returning DataFrame 'spy'.
+2025-03-02 21:28:13,560 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 21:28:13,563 - INFO - Missing values check completed.
+2025-03-02 21:28:13,567 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:28:13,601 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 21:28:13,606 - INFO - Missing values check completed.
+2025-03-02 21:28:13,608 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:28:13,640 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 21:28:13,644 - INFO - Missing values check completed.
+2025-03-02 21:28:13,647 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:31:16,780 - INFO - Converted 'Date' column to datetime in DataFrame 'tesla'.
+2025-03-02 21:31:16,783 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 21:31:16,787 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:31:16,798 - INFO - Converted 'Date' column to datetime in DataFrame 'bnd'.
+2025-03-02 21:31:16,798 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 21:31:16,807 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:31:16,818 - INFO - Converted 'Date' column to datetime in DataFrame 'spy'.
+2025-03-02 21:31:16,824 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 21:31:16,831 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:31:16,873 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 21:31:16,878 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 21:31:16,879 - INFO - Returning DataFrame 'spy'.
+2025-03-02 21:31:16,924 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 21:31:16,924 - INFO - Missing values check completed.
+2025-03-02 21:31:16,924 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:31:16,958 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 21:31:16,958 - INFO - Missing values check completed.
+2025-03-02 21:31:16,964 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:31:16,999 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 21:31:17,002 - INFO - Missing values check completed.
+2025-03-02 21:31:17,004 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:33:48,242 - INFO - Converted 'Date' column to datetime in DataFrame 'tesla'.
+2025-03-02 21:33:48,242 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 21:33:48,245 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:33:48,254 - INFO - Converted 'Date' column to datetime in DataFrame 'bnd'.
+2025-03-02 21:33:48,256 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 21:33:48,257 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:33:48,262 - INFO - Converted 'Date' column to datetime in DataFrame 'spy'.
+2025-03-02 21:33:48,267 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 21:33:48,270 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:33:48,289 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 21:33:48,292 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 21:33:48,292 - INFO - Returning DataFrame 'spy'.
+2025-03-02 21:33:48,306 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 21:33:48,316 - INFO - Missing values check completed.
+2025-03-02 21:33:48,318 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:33:48,351 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 21:33:48,354 - INFO - Missing values check completed.
+2025-03-02 21:33:48,356 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:33:48,385 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 21:33:48,390 - INFO - Missing values check completed.
+2025-03-02 21:33:48,392 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:34:30,718 - INFO - Converted 'Date' column to datetime in DataFrame 'tesla'.
+2025-03-02 21:34:30,723 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'tesla'.
+2025-03-02 21:34:30,726 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:34:30,732 - INFO - Converted 'Date' column to datetime in DataFrame 'bnd'.
+2025-03-02 21:34:30,734 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_BND_Forecast.csv' loaded successfully as 'bnd'.
+2025-03-02 21:34:30,737 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:34:30,745 - INFO - Converted 'Date' column to datetime in DataFrame 'spy'.
+2025-03-02 21:34:30,747 - INFO - CSV file '../week 11 data/Data/Predicted Data/LSTM_Tesla_Forecast.csv' loaded successfully as 'spy'.
+2025-03-02 21:34:30,748 - INFO - Shape of DataFrame 'spy': (12, 2)
+2025-03-02 21:34:30,767 - INFO - Returning DataFrame 'tesla'.
+2025-03-02 21:34:30,769 - INFO - Returning DataFrame 'bnd'.
+2025-03-02 21:34:30,769 - INFO - Returning DataFrame 'spy'.
+2025-03-02 21:34:30,791 - INFO - Checking for missing values in DataFrame 'tesla'.
+2025-03-02 21:34:30,794 - INFO - Missing values check completed.
+2025-03-02 21:34:30,798 - INFO - Shape of DataFrame 'tesla': (12, 2)
+2025-03-02 21:34:30,825 - INFO - Checking for missing values in DataFrame 'bnd'.
+2025-03-02 21:34:30,826 - INFO - Missing values check completed.
+2025-03-02 21:34:30,831 - INFO - Shape of DataFrame 'bnd': (12, 2)
+2025-03-02 21:34:30,861 - INFO - Checking for missing values in DataFrame 'spy'.
+2025-03-02 21:34:30,866 - INFO - Missing values check completed.
+2025-03-02 21:34:30,867 - INFO - Shape of DataFrame 'spy': (12, 2)
