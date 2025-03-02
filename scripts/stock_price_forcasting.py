@@ -120,6 +120,15 @@ class StockPriceForecaster:
             plt.plot(future_dates, forecast, label=f'{name} Forecast')
         plt.legend()
         plt.show()
+    # Store LSTM predictions in a DataFrame
+    def get_lstm_forecast_df(self, name="LSTM_Predictions.csv"):
+        """Store LSTM predictions in a DataFrame with Date and Close columns."""
+        future_dates = pd.date_range(self.test.index[-1], periods=13, freq='M')[1:]
+        lstm_forecast_df = pd.DataFrame({'Date': future_dates, 'Close': self.forecasts['LSTM']})
+        lstm_forecast_df.to_csv(name, index=False)
+        logging.info(f"LSTM forecast saved as {name}")
+        return lstm_forecast_df
+
 ''' 
     def run_all(self):
         """Run all models, evaluate and plot results."""
